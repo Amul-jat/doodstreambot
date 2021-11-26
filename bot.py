@@ -13,10 +13,10 @@ import re
 API_ID = environ.get('API_ID')
 API_HASH = environ.get('API_HASH')
 BOT_TOKEN = environ.get('BOT_TOKEN')
-THUMB_URL = environ.get('THUMB_URL', 'https://telegra.ph/file/1181d9119a13988dfe29c.jpg')
 DOODSTREAM_API_KEY = environ.get('DOODSTREAM_API_KEY')
 BITLY_KEY = environ.get('BITLY_KEY')
 CHANNEL = environ.get('CHANNEL')
+HOWTO = environ.get('HOWTO')
 bot = Client('Doodstream bot',
              api_id=API_ID,
              api_hash=API_HASH,
@@ -174,7 +174,7 @@ async def remove_username(new_List):
 async def addFooter(str):
     footer = """
     ━━━━━━━━━━━━━━━
-⚙️ How to Download / Watch Online : https://t.me/Desi_Bhabhi_Aunty_hot_Video/41
+⚙️ How to Download / Watch Online :""" + HOWTO + """
 ━━━━━━━━━━━━━━━
 ⭐️JOIN CHANNEL ➡️ t.me/""" + CHANNEL
     return str + footer
