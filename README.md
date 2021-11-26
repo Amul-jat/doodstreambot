@@ -16,7 +16,7 @@ Upload on Doodstream by Url, File and also by direct forward post from other cha
 
 #### The Easy Way
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://www.heroku.com/deploy?template=https://github.com/Amul-jat/Pdisk2urlink)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://www.heroku.com/deploy?template=https://github.com/Amul-jat/doodstreambot)
 
 ##### Required Variables
 
@@ -25,7 +25,7 @@ Upload on Doodstream by Url, File and also by direct forward post from other cha
 - `API_HASH`: Get this value from [telgram.org](https://my.telegram.org/apps)
 - `DOODSTREAM_API_KEY`: Create [Doodstream](https://doodstream.com/join/s3s3m45tculn) account then get this value from [Doodstream API](https://doodstream.com/api-docs)
 - `BITLY_KEY`: Create [Bit.ly](https://bitly.com/a/sign_in) account then get this value from Profile settings > Generic access token
-- `THUMB_URL`: Get permanent image url from [@HK_telegraph_BOT](https://telegram.me/HK_telegraph_BOT)
+- `HOWTO`: Your "How to Download from Droplink" video link
 
 ##### Credit
 
