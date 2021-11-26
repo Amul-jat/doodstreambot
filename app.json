@@ -11,7 +11,7 @@
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token (must add)",
-            "value": "2092307806:AAFUt5FMXTpUtbatsPzIeeKgLSXtXyTHbuk"
+            "value": ""
         },
         "API_ID": {
             "description": "Get this value from https://my.telegram.org",
@@ -23,7 +23,7 @@
         },
         "DOODSTREAM_API_KEY": {
             "description": "Get this from https://doodstream.com/api-docs (must change)",
-            "value": "92230f61d4bd05674bee17fe0d454f81"
+            "value": "66186ezt1oza1ar9unrsk"
         },
          "BITLY_KEY": {
             "description": "Bitly API See Readme for further details",
@@ -33,9 +33,9 @@
             "description": "Enter your telegram channel Username (must change and without @)",
             "value": "Desi_bhabhi_Aunty_Hot_video"
         },
-        "THUMB_URL": {
-            "description": "Enter the permanent thumbnail image url can use this @HK_telegraph_BOT",
-            "value" : "https://telegra.ph/file/a03f7fb32162781e409e2.jpg"
+        "HOWTO": {
+            "description": "Your 'How to Download from Droplink' video link",
+            "value": "Desi_Bhabhi_Aunty_hot_Video/80"
         }
     },
     "addons": [],
