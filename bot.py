@@ -76,7 +76,7 @@ async def Doodstream_uploader(bot, message):
 
 
 '''async def get_ptitle(url):
-    if ('bit' in url ):
+    if ('bit' in url or 'gplink' in url ):
       url = urlopen(url).geturl()
       
       
