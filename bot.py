@@ -1,7 +1,7 @@
 from os import environ
 import os
 import time
-import urlclean
+from urlclean import unshorten
 from urllib.parse import urlparse
 import aiohttp
 from pyrogram import Client, filters
