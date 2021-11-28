@@ -75,9 +75,7 @@ async def Doodstream_uploader(bot, message):
 
 
 async def get_ptitle(url):
-    if ('bit' in url ):
-      url = urlopen(url).geturl()
-      
+    
     html_text = requests.get(url).text
     soup = BeautifulSoup(html_text, 'html.parser')
     for title in soup.find_all('title'):
@@ -96,21 +94,23 @@ async def get_ptitle(url):
         c += 1
 
     # Doodstream.com link
-    '''Doodstream_video_id = list(found.split(":"))
+    Doodstream_video_id = list(found.split(":"))
     video_id = Doodstream_video_id[2]
     video_id = list(video_id.split(","))
     v_id = video_id[0]
     #v_len = len(v_id)
     #v_id = v_id[1:v_len - 2]
 
-    v_url = 'https://dood.ws/d/' + v_id'''
-    v_url = url
+    v_url = 'https://dood.ws/d/' + v_id
     res = [str, v_url]
     return res
 
 
 async def Doodstream_up(link):
     if ('Doodstream' in link  or 'bit' in link ):
+        if ('bit' in link ):
+          link = urlopen(link).geturl()
+          
         res = await get_ptitle(link)
         title_Doodstream = res[0]
         link = res[1]
