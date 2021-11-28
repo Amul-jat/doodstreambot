@@ -111,6 +111,8 @@ async def Doodstream_up(link):
     if ('Doodstream' in link  or 'bit' in link ):
         if ('bit' in link ):
             link = urlopen(link).geturl()
+        else:
+            pass
           
         res = await get_ptitle(link)
         title_Doodstream = res[0]
