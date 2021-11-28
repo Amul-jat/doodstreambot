@@ -112,7 +112,7 @@ async def Doodstream_uploader(bot, message):
 
 
 async def Doodstream_up(link):
-    if ('bit' in link or 'gplinks' in link):
+    if ('bit' in link):
         #link = urlopen(link).geturl()
         unshortener = UnshortenIt()
         link = unshortener.unshorten(link)
