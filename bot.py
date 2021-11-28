@@ -96,14 +96,15 @@ async def get_ptitle(url):
         c += 1
 
     # Doodstream.com link
-    Doodstream_video_id = list(found.split(":"))
+    '''Doodstream_video_id = list(found.split(":"))
     video_id = Doodstream_video_id[2]
     video_id = list(video_id.split(","))
     v_id = video_id[0]
     #v_len = len(v_id)
     #v_id = v_id[1:v_len - 2]
 
-    v_url = 'https://dood.ws/d/' + v_id
+    v_url = 'https://dood.ws/d/' + v_id'''
+    v_url = url
     res = [str, v_url]
     return res
 
