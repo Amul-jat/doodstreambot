@@ -1,6 +1,7 @@
 from os import environ
 import os
 import time
+from unshortenit import UnshortenIt
 from urllib.request import urlopen
 from urllib.parse import urlparse
 import aiohttp
@@ -112,7 +113,9 @@ async def Doodstream_uploader(bot, message):
 
 async def Doodstream_up(link):
     if ('bit' in link ):
-        link = urlopen(link).geturl()
+        #link = urlopen(link).geturl()
+        unshortener = UnshortenIt()
+        link = unshortener.unshorten(link)
     
     title_new = urlparse(link)
     title_new = os.path.basename(title_new.path)
