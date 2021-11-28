@@ -1,7 +1,7 @@
 from os import environ
 import os
 import time
-from urlclean import unshorten
+from urllib.request import urlopen
 from urllib.parse import urlparse
 import aiohttp
 from pyrogram import Client, filters
@@ -76,7 +76,7 @@ async def Doodstream_uploader(bot, message):
 
 async def get_ptitle(url):
     if ('bit' in url ):
-      url = urlclean.unshorten(url)
+      url = urlopen(url).geturl()
       
     html_text = requests.get(url).text
     soup = BeautifulSoup(html_text, 'html.parser')
