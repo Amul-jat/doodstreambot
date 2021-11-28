@@ -74,7 +74,7 @@ async def Doodstream_uploader(bot, message):
         await message.reply(f'Error: {e}', quote=True)
 
 
-async def get_ptitle(url):
+'''async def get_ptitle(url):
     if ('bit' in url ):
       url = urlopen(url).geturl()
       
@@ -107,18 +107,16 @@ async def get_ptitle(url):
     v_url = 'https://dood.ws/d/' + v_id'''
     v_url = url
     res = [str, v_url]
-    return res
+    return res'''
 
 
 async def Doodstream_up(link):
-    if ('Doodstream' in link  or 'bit' in link ):
-        res = await get_ptitle(link)
-        title_Doodstream = res[0]
-        link = res[1]
-    else:
-        title_new = urlparse(link)
-        title_new = os.path.basename(title_new.path)
-        title_Doodstream = '@' + CHANNEL + title_new
+    if ('bit' in link ):
+        link = urlopen(link).geturl()
+    
+    title_new = urlparse(link)
+    title_new = os.path.basename(title_new.path)
+    title_Doodstream = '@' + CHANNEL + title_new
     res = requests.get(
          f'https://doodapi.com/api/upload/url?key={DOODSTREAM_API_KEY}&url={link}&new_title={title_Doodstream}')
          
