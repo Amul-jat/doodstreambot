@@ -16,7 +16,6 @@ API_ID = environ.get('API_ID')
 API_HASH = environ.get('API_HASH')
 BOT_TOKEN = environ.get('BOT_TOKEN')
 DOODSTREAM_API_KEY = environ.get('DOODSTREAM_API_KEY')
-BITLY_KEY = environ.get('BITLY_KEY')
 CHANNEL = environ.get('CHANNEL')
 HOWTO = environ.get('HOWTO')
 bot = Client('Doodstream bot',
@@ -31,20 +30,20 @@ bot = Client('Doodstream bot',
 async def start(bot, message):
     await message.reply(
         f"**Hey, {message.chat.first_name}!**\n\n"
-        "**I am a Doodstream post convertor bot and i am able to upload all direct links to Doodstream,just send me link or full post... \n Join my Group @ComicBank**")
+        "**I am a Doodstream post convertor bot and i am able to upload all direct links to Doodstream,just send me link or full post... \n created by @shreyansh11**")
 
 @bot.on_message(filters.command('help') & filters.private)
 async def start(bot, message):
     await message.reply(
         f"**Hello, {message.chat.first_name}!**\n\n"
-        "**If you send post which had Doodstream Links, texts & images... Than I'll convert & replace all Doodstream links with your Doodstream links \nMessage me @kamdev07 For more help-**")
+        "**If you send post which had Doodstream Links, texts & images... Than I'll convert & replace all Doodstream links with your Doodstream links \nMessage me @shreyansh11 For more help-**")
 
 @bot.on_message(filters.command('support') & filters.private)
 async def start(bot, message):
     await message.reply(
         f"**Hey, {message.chat.first_name}!**\n\n"
-        "**please contact me on @kamdev07 or for more join @Doodstream_Admins**")
-    
+        "**please contact me on @shreyansh11 or for more join @pdisk_Admins**")
+
 @bot.on_message(filters.text & filters.private)
 async def Doodstream_uploader(bot, message):
     new_string = str(message.text)
@@ -129,9 +128,7 @@ async def Doodstream_up(link):
     v_id = data['result']['filecode']
     #bot.delete_messages(con)
     v_url = 'https://dood.ws/d/' + v_id
-    s = Shortener(api_key=BITLY_KEY)
-    v_url = s.bitly.short(v_url)
-    return (v_url)
+    
 
 
 async def multi_Doodstream_up(ml_string):
