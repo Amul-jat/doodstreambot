@@ -1,0 +1,53 @@
+{
+    "name": "Doodstream Post Converter Bot",
+    "description": "Upload on Doodstream...",
+    "keywords": [
+        "telegram",
+        "Doodstream",
+        "shortner"
+    ],
+    "website": "https://github.com/Amul-jat/Doodstreambot",
+    "repository": "https://github.com/Amul-jat/Doodstreambot",
+    "env": {
+        "BOT_TOKEN": {
+            "description": "Your bot token (must add)",
+            "value": ""
+        },
+        "API_ID": {
+            "description": "Get this value from https://my.telegram.org",
+            "value": "7626510"
+        },
+        "API_HASH": {
+            "description": "Get this value from https://my.telegram.org",
+            "value": "ca991bfa07a6ac45e6d5f374c84ab05c"
+        },
+        "DOODSTREAM_API_KEY": {
+            "description": "Get this from https://doodstream.com/api-docs (must change)",
+            "value": "66186ezt1oza1ar9unrsk"
+        },
+         "BITLY_KEY": {
+            "description": "Bitly API See Readme for further details",
+            "value": "b93836643675f9aa9b65b22ef6d512dbfdfa559a"
+        },
+        "CHANNEL": {
+            "description": "Enter your telegram channel Username (must change and without @)",
+            "value": "Desi_bhabhi_Aunty_Hot_video"
+        },
+        "HOWTO": {
+            "description": "Your 'How to Download from Droplink' video link",
+            "value": "Desi_Bhabhi_Aunty_hot_Video/80"
+        }
+    },
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
